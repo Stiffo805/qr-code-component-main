@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -15,6 +18,13 @@
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
     <title>Frontend Mentor | QR code component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -22,14 +32,27 @@
   </head>
   <body>
     <div id="page-container">
-      <header></header>
+      <header>
+        <input id="qr-code-size-range" type="range" min="0" max="50"
+          value="0"
+          autocomplete="off"
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom"
+          data-bs-title="QR code size"
+          data-bs-trigger="hover"
+        >
+      </header>
       <main>
-        <img src="images/image-qr-code.png" />
-        <p class="main-paragraph">Improve your front-end skills by building projects</p>
-        <p>
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
-        </p>
+        <div class="tile-container">
+          <img id="qr-code-img" src="images/image-qr-code.png" alt="QR code" />
+          <p class="main-paragraph">
+            Improve your front-end skills by building projects
+          </p>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
       </main>
 
       <footer>
@@ -40,4 +63,11 @@
       </footer>
     </div>
   </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
 </html>

@@ -11,14 +11,14 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
   - [Author](#author)
 
 ## Overview
 
 ### Screenshot
 
-![Image couldn't be loaded 😔](image.png)
+![Image couldn't be loaded 😔](image-1.png)
+![Image couldn't be loaded 😔](image-2.png)
 
 ### Links
 
@@ -33,64 +33,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - CSS custom properties
 - Flexbox
 - CSS Grid
-
-### What I learned
-
-Proud of:
-
-```html
-<div id="page-container">
-  <header></header>
-  <main>
-    <img src="images/image-qr-code.png" />
-    <p class="main-paragraph">Improve your front-end skills by building projects</p>
-    <p>
-      Scan the QR code to visit Frontend Mentor and take your coding skills
-      to the next level
-    </p>
-  </main>
-
-  <footer>
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-      >Frontend Mentor</a
-    >. Coded by <a href="#">Adam Konior</a>.
-  </footer>
-</div>
-```
-```css
-main {
-
-  text-align: center;
-
-  max-width: 300px;
-
-  background-color: hsl(0, 0%, 100%);
-
-  padding: var(--padding-md);
-
-  border-radius: var(--rounded-md);
-
-  img {
-    width: 100%;
-    border-radius: var(--rounded-md);
-  }
-
-  p {
-    font-family: "Outfit", sans-serif;
-    font-size: 15px;
-
-    color: hsl(216, 15%, 48%);
-
-    &.main-paragraph {
-      font-weight: 700;
-      font-size: 20px;
-
-      color: black;
-    }
-  }
-}
-```
 
 ## Author
 
